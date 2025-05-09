@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Housing Development Feasibility Analysis - Clifton, NJ</title>
+    <script>
+    // Remove unwanted hashtags from URL
+    if (window.location.hash) {
+        history.replaceState 
+            ? window.history.replaceState(null, null, window.location.href.split('#')[0])
+            : window.location.hash = '';
+    }
+    </script>
     <style>
         * {
             box-sizing: border-box;
