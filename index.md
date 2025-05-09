@@ -20,6 +20,21 @@
             padding: 20px;
             background-color: #f9f9f9;
         }
+        
+        .location-map {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .location-map img {
+            max-width: 70%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
         header {
             text-align: center;
@@ -144,6 +159,11 @@
         <section id="introduction">
             <h2>Introduction</h2>
             <p>This project analyzes the potential for affordable housing development in Clifton, New Jersey through GIS-based spatial analysis. Using demographic, economic, and land use data, this study identifies priority areas for affordable housing development based on socioeconomic need, transit accessibility, and vacant land availability.</p>
+            
+            <div class="location-map">
+                <h3>Study Area: Clifton, New Jersey</h3>
+                <img src="images/NJ_Clifton.jpg" alt="Map showing the location of Clifton in New Jersey">
+            </div>
         </section>
 
         <section id="key-findings">
@@ -301,21 +321,71 @@
             </div>
             
             <div class="finding">
-                <h3>Housing Occupancy Patterns</h3>
-                <p>Clifton exhibits distinct patterns of housing occupancy, with owner-occupied units (shown in teal) dominating the western portions of the city, while renter-occupied units (shown in peach) are concentrated in the eastern and central areas.</p>
-                <img src="images/Housing Occupancy.jpg" alt="Housing Occupancy and Vacancy Patterns in Clifton, NJ">
-            </div>
-
-            <div class="finding">
-                <h3>Income Distribution</h3>
-                <p>The analysis reveals significant income disparities across Clifton, with median household incomes ranging from over $119,300 in the western neighborhoods to less than $37,800 in the northeastern section.</p>
-                <img src="images/Median Household Income.jpg" alt="Median Household Income in Clifton, NJ">
-            </div>
-
-            <div class="finding">
-                <h3>Housing Cost Burden</h3>
-                <p>A substantial proportion of Clifton's renters experience housing cost burden, with several census tracts showing that over 66% of renter households spend 30% or more of their income on housing costs.</p>
-                <img src="images/Rent Burden.jpg" alt="Percent of Renter Households with Housing Cost Burden">
+                <h3>Socioeconomic and Housing Analysis</h3>
+                <p>The following maps provide a comprehensive view of Clifton's socioeconomic patterns and housing characteristics, revealing important spatial relationships that inform affordable housing needs.</p>
+                
+                <style>
+                    .map-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 20px;
+                        margin: 30px 0;
+                    }
+                    
+                    .map-item {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .map-item img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                    
+                    .map-caption {
+                        text-align: center;
+                        font-weight: bold;
+                        margin-top: 10px;
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .map-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                </style>
+                
+                <div class="map-grid">
+                    <div class="map-item">
+                        <img src="images/Race.jpg" alt="Racial and Ethnic Composition in Clifton, NJ">
+                        <div class="map-caption">Racial and Ethnic Composition</div>
+                    </div>
+                    <div class="map-item">
+                        <img src="images/Rent Burden.jpg" alt="Percent of Renter Households with Housing Cost Burden">
+                        <div class="map-caption">Rent Burden Distribution</div>
+                    </div>
+                    <div class="map-item">
+                        <img src="images/Income Distribution.jpg" alt="Income Distribution in Clifton, NJ">
+                        <div class="map-caption">Income Distribution</div>
+                    </div>
+                    <div class="map-item">
+                        <img src="images/Housing Occupancy.jpg" alt="Housing Occupancy and Vacancy Patterns">
+                        <div class="map-caption">Housing Occupancy Patterns</div>
+                    </div>
+                    <div class="map-item" style="grid-column: span 2;">
+                        <img src="images/Median Household Income.jpg" alt="Median Household Income in Clifton, NJ">
+                        <div class="map-caption">Median Household Income</div>
+                    </div>
+                </div>
+                
+                <p>The maps reveal several key patterns:</p>
+                <ul>
+                    <li><strong>Housing Occupancy Patterns:</strong> Owner-occupied units (shown in teal) dominate the western portions of the city, while renter-occupied units (shown in peach) are concentrated in the eastern and central areas.</li>
+                    <li><strong>Income Distribution:</strong> Significant income disparities exist across Clifton, with median household incomes ranging from over $119,300 in the western neighborhoods to less than $37,800 in the northeastern section.</li>
+                    <li><strong>Housing Cost Burden:</strong> A substantial proportion of Clifton's renters experience housing cost burden, with several census tracts showing that over 66% of renter households spend 30% or more of their income on housing costs.</li>
+                    <li><strong>Racial and Ethnic Patterns:</strong> Clifton's eastern neighborhoods show higher concentrations of Hispanic or Latino populations, correlating with areas of higher housing cost burden.</li>
+                </ul>
             </div>
         </section>
 
