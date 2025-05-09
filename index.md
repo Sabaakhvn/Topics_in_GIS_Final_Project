@@ -511,7 +511,7 @@
     </main>
     
     <footer>
-        <p>Created by Your Name | Topics in GIS Course | May 2025</p>
+        <p>Created by Saba Akhavansadr | Topics in GIS | Spring 2025 | Professor Will Payne | Bloustein School of Planning and Public Policy, Rutgers University</p>
     </footer>
 </body>
 </html>
