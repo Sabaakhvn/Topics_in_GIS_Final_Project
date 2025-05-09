@@ -152,7 +152,7 @@
             <div class="finding">
                 <h3>Land Use Distribution and Tax Revenue</h3>
                 <p>The analysis of Clifton's land use reveals that residential properties dominate the landscape, covering 52.57% of the city's total land area, while generating approximately $222 million in annual tax revenue.</p>
-                <img src="images/property-class-map.jpg" alt="Categorical Map of Clifton Parcels by Property Class">
+                <img src="images/Property Class.jpg" alt="Categorical Map of Clifton Parcels by Property Class">
                 
                 <table>
                     <thead>
@@ -303,19 +303,19 @@
             <div class="finding">
                 <h3>Housing Occupancy Patterns</h3>
                 <p>Clifton exhibits distinct patterns of housing occupancy, with owner-occupied units (shown in teal) dominating the western portions of the city, while renter-occupied units (shown in peach) are concentrated in the eastern and central areas.</p>
-                <img src="images/housing-occupancy-map.jpg" alt="Housing Occupancy and Vacancy Patterns in Clifton, NJ">
+                <img src="images/Housing Occupancy.jpg" alt="Housing Occupancy and Vacancy Patterns in Clifton, NJ">
             </div>
 
             <div class="finding">
                 <h3>Income Distribution</h3>
                 <p>The analysis reveals significant income disparities across Clifton, with median household incomes ranging from over $119,300 in the western neighborhoods to less than $37,800 in the northeastern section.</p>
-                <img src="images/median-income-map.jpg" alt="Median Household Income in Clifton, NJ">
+                <img src="images/Median Household Income.jpg" alt="Median Household Income in Clifton, NJ">
             </div>
 
             <div class="finding">
                 <h3>Housing Cost Burden</h3>
                 <p>A substantial proportion of Clifton's renters experience housing cost burden, with several census tracts showing that over 66% of renter households spend 30% or more of their income on housing costs.</p>
-                <img src="images/rent-burden-map.jpg" alt="Percent of Renter Households with Housing Cost Burden">
+                <img src="images/Rent Burden.jpg" alt="Percent of Renter Households with Housing Cost Burden">
             </div>
         </section>
 
@@ -325,13 +325,13 @@
             <div class="finding">
                 <h3>Spatial Distribution of Vacant Parcels</h3>
                 <p>Vacant parcels in Clifton are not randomly distributed but show distinct clustering patterns along major transportation corridors and in areas with lower land values. The choropleth map below shows the land value per square foot across Clifton, with vacant parcels highlighted in magenta.</p>
-                <img src="images/land-value-map.jpg" alt="Choropleth Map of Clifton Parcels by Land Value per Sq. Ft">
+                <img src="images/Land Value.jpg" alt="Choropleth Map of Clifton Parcels by Land Value per Sq. Ft">
             </div>
 
             <div class="finding">
                 <h3>Transit Accessibility</h3>
                 <p>The analysis of transit accessibility reveals that many vacant parcels are well-served by public transportation, with numerous bus stops throughout the city and several train stations in neighboring communities.</p>
-                <img src="images/transit-accessibility-map.jpg" alt="Map of Clifton Vacant Parcels by Transit Accessibility">
+                <img src="images/Transit_Accessibility.jpg" alt="Map of Clifton Vacant Parcels by Transit Accessibility">
             </div>
         </section>
 
@@ -359,20 +359,20 @@
             <div class="finding">
                 <h3>Priority Areas for Development</h3>
                 <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton.</p>
-                <img src="images/target-areas-map.jpg" alt="Target Areas for Affordable Housing Development">
+                <img src="images/Vacant_Parcels_Need_Score.jpg" alt="Target Areas for Affordable Housing Development">
             </div>
 
             <div class="finding">
                 <h3>Transit-Oriented Development Opportunities</h3>
                 <p>By overlaying transit accessibility with vacant parcels and Need Score, the analysis identifies specific opportunities for transit-oriented affordable housing development.</p>
-                <img src="images/transit-oriented-opportunities-map.jpg" alt="Identifying Transit-Oriented Affordable Housing Opportunities">
+                <img src="images/Transit_Oriented.jpg" alt="Identifying Transit-Oriented Affordable Housing Opportunities">
             </div>
         </section>
 
         <section id="racial-composition">
             <h2>Racial and Ethnic Composition</h2>
             <p>The demographic analysis shows that Clifton has distinct patterns of racial and ethnic distribution, with Hispanic or Latino populations concentrated in the eastern portions of the city.</p>
-            <img src="images/racial-composition-map.jpg" alt="Racial and Ethnic Composition in Clifton, NJ By Census Tract">
+            <img src="images/Race.jpg" alt="Racial and Ethnic Composition in Clifton, NJ By Census Tract">
         </section>
 
         <section id="conclusions">
