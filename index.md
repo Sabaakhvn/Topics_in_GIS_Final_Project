@@ -11,8 +11,39 @@
             ? window.history.replaceState(null, null, window.location.href.split('#')[0])
             : window.location.hash = '';
     }
+    
+    // Prevent automatic adding of hash to URL when clicking on headings
+    document.addEventListener('DOMContentLoaded', function() {
+        // Find all heading elements
+        const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        
+        // For each heading
+        headings.forEach(function(heading) {
+            // Remove any existing links within the heading
+            const links = heading.querySelectorAll('a');
+            links.forEach(function(link) {
+                // Replace the link with its inner content
+                link.outerHTML = link.innerHTML;
+            });
+            
+            // Prevent click events from adding hashtags
+            heading.addEventListener('click', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    });
     </script>
     <style>
+        /* Remove anchor links/clip icons from headings */
+        .header-link, 
+        h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+        h1 svg, h2 svg, h3 svg, h4 svg, h5 svg, h6 svg {
+            display: none !important;
+            visibility: hidden !important;
+        }
+        
+        /* Main styles */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -436,7 +467,7 @@
 
             <div class="finding">
                 <h3>Priority Areas for Development</h3>
-                <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton. In this site selection methodology, I prioritized municipally-owned vacant parcels to streamline development by avoiding potential condemnation proceedings and associated legal complexities. The analysis identified only two municipal vacant parcels within the study area, with the parcel located in the north-central region emerging as the optimal development site based on multiple criteria:</p>
+                <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton. In our site selection methodology, we prioritized municipally-owned vacant parcels to streamline development by avoiding potential condemnation proceedings and associated legal complexities. The analysis identified only two municipal vacant parcels within the study area, with the parcel located in the north-central region emerging as the optimal development site based on multiple criteria:</p>
                 
                 <ul>
                     <li>Strategic location within a census tract exhibiting high affordable housing need scores</li>
@@ -451,6 +482,36 @@
                 <h3>Transit-Oriented Development Opportunities</h3>
                 <p>By overlaying transit accessibility with vacant parcels and Need Score, the analysis identifies specific opportunities for transit-oriented affordable housing development.</p>
                 <img src="images/Transit_Oriented.jpg" alt="Identifying Transit-Oriented Affordable Housing Opportunities">
+            </div>
+        </section>
+
+        <section id="conclusions">
+            <h2>Conclusions and Recommendations</h2>
+            
+            <p>Based on the comprehensive analysis, the following recommendations are proposed for affordable housing development in Clifton:</p>
+            
+            <div class="conclusion-item">
+                <strong>Prioritize Eastern Census Tracts</strong>: Focus affordable housing development in eastern Clifton where Need Scores are highest and multiple vacant parcels are available.
+            </div>
+            
+            <div class="conclusion-item">
+                <strong>Leverage Transit-Oriented Development</strong>: Target vacant parcels within 0.25 miles of bus stops or 0.5 miles of train stations to maximize accessibility for lower-income residents without vehicles.
+            </div>
+            
+            <div class="conclusion-item">
+                <strong>Diversify Housing Stock</strong>: Develop a mix of housing types, including apartments and multi-family residential buildings, particularly in areas currently dominated by single-family homes.
+            </div>
+            
+            <div class="conclusion-item">
+                <strong>Public-Private Partnerships</strong>: Establish partnerships with private developers to maximize the development potential of vacant land, particularly where corporate ownership is present.
+            </div>
+            
+            <div class="conclusion-item">
+                <strong>Tax Revenue Optimization</strong>: Consider mixed-use developments that include commercial components to optimize tax revenue generation while still providing affordable housing units.
+            </div>
+            
+            <div class="conclusion-item">
+                <strong>Inclusionary Zoning</strong>: Implement inclusionary zoning policies requiring a percentage of affordable units in new residential developments, particularly in areas with high median incomes.
             </div>
         </section>
 
@@ -480,7 +541,7 @@
     </main>
     
     <footer>
-        <p>Created by Saba Akhavansadr | Topics in GIS | Spring 2025 | Professor Will Payne | Bloustein School of Planning and Public Policy, Rutgers University</p>
+        <p>Created by Your Name | Topics in GIS Course | May 2025</p>
     </footer>
 </body>
 </html>
