@@ -472,7 +472,7 @@
     </main>
     
     <footer>
-        <p>Created by Your Name | Topics in GIS Course | May 2025</p>
+        <p>Created by Saba Akhavansadr | Topics in GIS | Spring 2025 | Bloustein School, Rutgers University</p>
     </footer>
 </body>
 </html>
