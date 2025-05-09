@@ -400,7 +400,7 @@
 
             <div class="finding">
                 <h3>Transit Accessibility</h3>
-                <p>The analysis of transit accessibility reveals that many vacant parcels are well-served by public transportation, with numerous bus stops throughout the city and several train stations in neighboring communities.</p>
+                <p>The analysis of transit accessibility was conducted using ESRI's Network Analyst tool to evaluate pedestrian connectivity to public transportation. Service areas were calculated to precisely delineate zones within a 0.25-mile walking distance of bus stops and a 1.0-mile walking distance of train stations, accounting for the actual street network rather than simple Euclidean distance. This methodology provides a more accurate representation of transit accessibility that reflects real-world pedestrian movement patterns.</p>
                 <img src="images/Transit_Accessibility.jpg" alt="Map of Clifton Vacant Parcels by Transit Accessibility">
             </div>
         </section>
@@ -428,7 +428,14 @@
 
             <div class="finding">
                 <h3>Priority Areas for Development</h3>
-                <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton.</p>
+                <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton. In our site selection methodology, we prioritized municipally-owned vacant parcels to streamline development by avoiding potential condemnation proceedings and associated legal complexities. The analysis identified only two municipal vacant parcels within the study area, with the parcel located in the north-central region emerging as the optimal development site based on multiple criteria:</p>
+                
+                <ul>
+                    <li>Strategic location within a census tract exhibiting high affordable housing need scores</li>
+                    <li>Exceptional transit connectivity with proximity to multiple bus stops, enhancing accessibility for transit-dependent residents</li>
+                    <li>Potential for integration with existing community infrastructure and services</li>
+                </ul>
+                
                 <img src="images/Vacant_Parcels_Need_Score.jpg" alt="Target Areas for Affordable Housing Development">
             </div>
 
@@ -437,12 +444,6 @@
                 <p>By overlaying transit accessibility with vacant parcels and Need Score, the analysis identifies specific opportunities for transit-oriented affordable housing development.</p>
                 <img src="images/Transit_Oriented.jpg" alt="Identifying Transit-Oriented Affordable Housing Opportunities">
             </div>
-        </section>
-
-        <section id="racial-composition">
-            <h2>Racial and Ethnic Composition</h2>
-            <p>The demographic analysis shows that Clifton has distinct patterns of racial and ethnic distribution, with Hispanic or Latino populations concentrated in the eastern portions of the city.</p>
-            <img src="images/Race.jpg" alt="Racial and Ethnic Composition in Clifton, NJ By Census Tract">
         </section>
 
         <section id="conclusions">
