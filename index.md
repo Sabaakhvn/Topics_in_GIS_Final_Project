@@ -485,36 +485,6 @@
             </div>
         </section>
 
-        <section id="conclusions">
-            <h2>Conclusions and Recommendations</h2>
-            
-            <p>Based on the comprehensive analysis, the following recommendations are proposed for affordable housing development in Clifton:</p>
-            
-            <div class="conclusion-item">
-                <strong>Prioritize Eastern Census Tracts</strong>: Focus affordable housing development in eastern Clifton where Need Scores are highest and multiple vacant parcels are available.
-            </div>
-            
-            <div class="conclusion-item">
-                <strong>Leverage Transit-Oriented Development</strong>: Target vacant parcels within 0.25 miles of bus stops or 0.5 miles of train stations to maximize accessibility for lower-income residents without vehicles.
-            </div>
-            
-            <div class="conclusion-item">
-                <strong>Diversify Housing Stock</strong>: Develop a mix of housing types, including apartments and multi-family residential buildings, particularly in areas currently dominated by single-family homes.
-            </div>
-            
-            <div class="conclusion-item">
-                <strong>Public-Private Partnerships</strong>: Establish partnerships with private developers to maximize the development potential of vacant land, particularly where corporate ownership is present.
-            </div>
-            
-            <div class="conclusion-item">
-                <strong>Tax Revenue Optimization</strong>: Consider mixed-use developments that include commercial components to optimize tax revenue generation while still providing affordable housing units.
-            </div>
-            
-            <div class="conclusion-item">
-                <strong>Inclusionary Zoning</strong>: Implement inclusionary zoning policies requiring a percentage of affordable units in new residential developments, particularly in areas with high median incomes.
-            </div>
-        </section>
-
         <section id="limitations">
             <h2>Limitations and Further Research</h2>
             
