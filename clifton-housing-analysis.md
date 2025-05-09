@@ -135,8 +135,8 @@ Additional data sources that would enhance the analysis include:
 
 ### Acknowledgments
 
-This project was completed as part of the Topics in GIS course. Special thanks to the instructors and the City of Clifton for providing access to the necessary data.
+This project was completed as part of the Topics in GIS course. Special thanks to the professor Will Payne and the City of Clifton for providing access to the necessary data.
 
 ### Contact
 
-For more information about this analysis, please contact [Your Name] at [your.email@example.com].
+For more information about this analysis, please contact [Saba Akhavansadr] at [saba.akhavansadr@rutgers.edu].
