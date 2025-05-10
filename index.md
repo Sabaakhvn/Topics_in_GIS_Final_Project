@@ -679,7 +679,7 @@
     #vacant-site-analysis h2 {
         color: #2c3e50;
         margin-bottom: 30px;
-        border-bottom: 2px solid #3498db;
+        border-bottom: 2px solid #f5f5f5;
         padding-bottom: 10px;
     }
     
