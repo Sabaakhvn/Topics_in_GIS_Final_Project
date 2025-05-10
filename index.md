@@ -217,11 +217,11 @@
                     <thead>
                         <tr>
                             <th>Property Class</th>
-                            <th>Class Type</th>
+                            <th>Property Type</th>
                             <th>Land Area (Acres)</th>
                             <th>Percentage of Total</th>
-                            <th>Last Year Tax</th>
-                            <th>Avg Tax per SqFt</th>
+                            <th>Annual Tax Revenue</th>
+                            <th>Avg Tax per Sq. Ft.</th>
                         </tr>
                     </thead>
                     <tbody>
