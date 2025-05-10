@@ -594,7 +594,7 @@
                 <h4>Development Potential</h4>
                 <ul>
                     <li>Moderate site size of 3.076 acres - ideal for a compact, efficient housing development</li>
-                    <li>Sufficient area to accommodate 30-50 affordable housing units (depending on density and design)</li>
+                    <li>Sufficient area to accommodate 90-150 affordable housing units (depending on density, design, and parking requirements)</li>
                     <li>Existing infrastructure including utilities and access points</li>
                     <li>Relatively flat topography suitable for construction</li>
                     <li>Potential for cohesive, single-phase development given the manageable site size</li>
