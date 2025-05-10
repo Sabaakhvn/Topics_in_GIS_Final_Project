@@ -570,19 +570,6 @@
             </ul>
         </div>
         
-        <div class="development-recommendations">
-            <h4>Recommendations for Redevelopment</h4>
-            <ol>
-                <li><strong>Environmental Assessment:</strong> Conduct thorough site evaluation for potential contamination and remediation needs</li>
-                <li><strong>Community Engagement:</strong> Involve local stakeholders in planning process to address needs and concerns</li>
-                <li><strong>Mixed-Income Strategy:</strong> Create diverse housing options including affordable units</li>
-                <li><strong>Heritage Preservation:</strong> Incorporate elements that honor the site's industrial past</li>
-                <li><strong>Transit Enhancement:</strong> Optimize connections to existing bus routes</li>
-                <li><strong>Sustainable Design:</strong> Implement green infrastructure and energy-efficient buildings</li>
-                <li><strong>Phased Approach:</strong> Develop gradually to ensure integration with surrounding community</li>
-            </ol>
-        </div>
-        
         <div class="conclusion-box">
             <p>The Clifton Railroad Corporation site represents a significant opportunity to repurpose underutilized industrial land for affordable housing in a transit-accessible location. With thoughtful planning and community engagement, this property could become a model for transit-oriented affordable housing development that respects Clifton's industrial past while addressing present-day housing needs.</p>
         </div>
