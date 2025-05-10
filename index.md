@@ -777,7 +777,6 @@
                 <li>Brownfield or contamination site data</li>
                 <li>Housing permits and pipeline projects</li>
                 <li>School enrollment and capacity data</li>
-                <li>Detailed parcel-level ownership information</li>
             </ul>
         </section>
     </main>
