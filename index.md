@@ -485,7 +485,7 @@
             </div>
 
             <div class="finding">
-                <h3>Transit-Oriented Development Opportunities</h3>
+                <h3>Where to Build Next? Multi-Criteria Evaluation of Housing Development</h3>
                 <p>By overlaying transit accessibility with vacant parcels and Need Score, the analysis identifies specific opportunities for transit-oriented affordable housing development.</p>
                 <img src="images/Transit_Oriented.jpg" alt="Identifying Transit-Oriented Affordable Housing Opportunities">
             </div>
