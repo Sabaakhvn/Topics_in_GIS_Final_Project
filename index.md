@@ -660,6 +660,273 @@
     }
 </style>
 
+        <!-- Add this section to your existing GitHub Pages website -->
+
+<section id="vacant-site-analysis">
+    <h2>Historical Analysis of Clifton Railroad Corporation Site (1995-2024)</h2>
+    
+    <div class="finding">
+        <h3>Introduction</h3>
+        <p>This analysis examines the historical transformation of the Clifton Railroad Corporation site in Clifton, New Jersey, through a chronological study of satellite imagery spanning nearly three decades. The site, encompassing 3.076 acres of land, represents a significant opportunity for affordable housing development due to its location, moderate size, and evolving usage patterns over time.</p>
+    </div>
+
+    <div class="finding">
+        <h3>Past: Active Industrial Operations (1995)</h3>
+        <img src="images/site-1995.jpg" alt="Clifton Railroad Corporation site in 1995" class="full-width-image">
+        <p>The 1995 black and white satellite image reveals an actively functioning industrial site characteristic of mid-to-late 20th century rail operations in northern New Jersey. Key features visible in this earliest image include:</p>
+        
+        <ul>
+            <li>Multiple large warehouse structures with distinctive long, rectangular footprints</li>
+            <li>Extensive paved areas used for vehicle and material storage</li>
+            <li>Clear signs of industrial activity throughout the property</li>
+            <li>A well-defined operational footprint extending across the full parcel</li>
+            <li>Adjacent residential neighborhoods with clear boundaries from the industrial zone</li>
+        </ul>
+        
+        <p>During this period, Clifton's industrial corridor, which includes this site, played an important role in the regional economy. The railroad infrastructure facilitated the movement of goods and materials, supporting manufacturing and distribution activities throughout Passaic County.</p>
+    </div>
+    
+    <div class="finding">
+        <h3>Transition Period: Early Signs of Change (2010)</h3>
+        <img src="images/site-2010.jpg" alt="Clifton Railroad Corporation site in 2010" class="full-width-image">
+        <p>By 2010, the color satellite imagery shows notable changes to the site, marking the beginning of a transition in its usage patterns:</p>
+        
+        <ul>
+            <li>Warehouse structures remain intact, maintaining their original configuration</li>
+            <li>More clearly defined storage areas and vehicle parking zones</li>
+            <li>Some sections show reduced activity compared to the 1995 image</li>
+            <li>Surrounding residential areas remain stable with little apparent change</li>
+            <li>Increased vegetation visible along the site periphery</li>
+        </ul>
+        
+        <p>This transition period coincides with broader economic shifts affecting industrial properties throughout northern New Jersey. While the site maintained operational functionality, the imagery suggests a less intensive use of certain areas compared to the earlier period.</p>
+    </div>
+    
+    <div class="finding">
+        <h3>Recent Past: Declining Industrial Activity (2020)</h3>
+        <img src="images/site-2020.jpg" alt="Clifton Railroad Corporation site in 2020" class="full-width-image">
+        <p>The 2020 satellite image demonstrates more pronounced changes to the site's usage:</p>
+        
+        <ul>
+            <li>Continued operation of the main warehouse structures</li>
+            <li>Significantly fewer vehicles and containers visible on the property</li>
+            <li>Larger portions of the site appear underutilized</li>
+            <li>Some areas showing apparent disuse or reduced maintenance</li>
+            <li>Greater vegetation encroachment in peripheral areas</li>
+            <li>Unchanged residential context surrounding the site</li>
+        </ul>
+        
+        <p>This period reflects the continued decline in traditional industrial activities that has affected many similar properties in the region. While the site maintains some operational aspects, the imagery indicates substantial portions no longer support intensive industrial use.</p>
+    </div>
+    
+    <div class="finding">
+        <h3>Present Conditions: Underutilization and Opportunity (2024)</h3>
+        <img src="images/site-2024.jpg" alt="Clifton Railroad Corporation site in 2024" class="full-width-image">
+        <p>The most recent imagery from 2024 shows further evolution of the site:</p>
+        
+        <ul>
+            <li>Warehouse structures still present but with visible signs of reduced activity</li>
+            <li>Substantially decreased vehicle and material storage</li>
+            <li>Large sections appear vacant or minimally utilized</li>
+            <li>Maintained access to transportation infrastructure</li>
+            <li>Stable surrounding residential context</li>
+            <li>Continued integration with the urban fabric of Clifton</li>
+        </ul>
+        
+        <p>The current state of the property reflects both the challenges and opportunities facing former industrial sites in urban New Jersey. While active operations have diminished, the site retains valuable characteristics including its size, location, and existing infrastructure.</p>
+    </div>
+    
+    <div class="finding">
+        <h3>Future Potential: Transit-Oriented Affordable Housing</h3>
+        <p>Based on the observed transformation over nearly three decades, this site presents compelling opportunities for redevelopment, particularly for affordable housing. Key factors supporting this potential include:</p>
+        
+        <div class="potential-factors">
+            <div class="factor-card">
+                <h4>Strategic Location</h4>
+                <ul>
+                    <li>Positioned between established residential neighborhoods</li>
+                    <li>Proximity to commercial corridors along major roadways</li>
+                    <li>Access to transportation infrastructure</li>
+                    <li>Integration with the existing urban fabric</li>
+                </ul>
+            </div>
+            
+            <div class="factor-card">
+                <h4>Transit Accessibility</h4>
+                <ul>
+                    <li>Multiple NJ Transit bus routes serve the surrounding area</li>
+                    <li>Connectivity to regional transportation networks</li>
+                    <li>Potential for transit-oriented development</li>
+                </ul>
+            </div>
+            
+            <div class="factor-card">
+                <h4>Development Potential</h4>
+                <ul>
+                    <li>Moderate site size of 3.076 acres - ideal for a compact, efficient housing development</li>
+                    <li>Sufficient area to accommodate 30-50 affordable housing units (depending on density and design)</li>
+                    <li>Existing infrastructure including utilities and access points</li>
+                    <li>Relatively flat topography suitable for construction</li>
+                    <li>Potential for cohesive, single-phase development given the manageable site size</li>
+                </ul>
+            </div>
+            
+            <div class="factor-card">
+                <h4>Community Integration</h4>
+                <ul>
+                    <li>Natural extension of surrounding residential zones</li>
+                    <li>Opportunity to enhance neighborhood connectivity</li>
+                    <li>Potential to add community amenities lacking in the area</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="finding">
+        <h3>Implementation Considerations</h3>
+        <p>While the site offers significant potential, several important factors would need addressing in any redevelopment planning:</p>
+        
+        <div class="implementation-considerations">
+            <div class="consideration">
+                <h4>1. Environmental Assessment</h4>
+                <ul>
+                    <li>Former industrial sites typically require environmental study</li>
+                    <li>Potential remediation needs based on historical rail usage</li>
+                    <li>Opportunity for brownfield redevelopment funding</li>
+                </ul>
+            </div>
+            
+            <div class="consideration">
+                <h4>2. Community Engagement</h4>
+                <ul>
+                    <li>Involvement of surrounding neighborhoods in planning process</li>
+                    <li>Assessment of local housing needs and preferences</li>
+                    <li>Integration with existing community character</li>
+                </ul>
+            </div>
+            
+            <div class="consideration">
+                <h4>3. Infrastructure Capacity</h4>
+                <ul>
+                    <li>Evaluation of utility systems to support residential conversion</li>
+                    <li>Transportation impact analysis</li>
+                    <li>Stormwater management assessment</li>
+                </ul>
+            </div>
+            
+            <div class="consideration">
+                <h4>4. Development Efficiency</h4>
+                <ul>
+                    <li>At 3.076 acres, the site is an optimal size for a single-phase affordable housing project</li>
+                    <li>Small enough to be financially manageable for municipal or non-profit developers</li>
+                    <li>Large enough to achieve economies of scale in construction</li>
+                    <li>Suitable for comprehensive rather than phased development</li>
+                    <li>Potential for quicker implementation timeline compared to larger properties</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="finding">
+        <h3>Conclusion</h3>
+        <div class="conclusion-box">
+            <p>The Clifton Railroad Corporation site illustrates the evolution of industrial properties in northern New Jersey over recent decades. From active industrial operations in 1995 to the current underutilized state in 2024, the changes visible in satellite imagery reflect broader economic transitions affecting similar properties throughout the region.</p>
+            <p>The site now presents a significant opportunity for affordable housing development that could leverage existing infrastructure and transit accessibility while addressing community needs. At 3.076 acres, it offers an ideal scale for an efficient affordable housing project - large enough to make a meaningful impact on housing availability but small enough to be financially feasible for municipal or non-profit developers. Through thoughtful planning that respects both the site's industrial heritage and its urban context, this compact property could transform from an underutilized industrial remnant to a vibrant residential community serving Clifton's future.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Styles for the vacant site analysis section */
+    #vacant-site-analysis {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    #vacant-site-analysis h2 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+    
+    #vacant-site-analysis h3 {
+        color: #2c3e50;
+        margin: 25px 0 15px 0;
+    }
+    
+    #vacant-site-analysis h4 {
+        color: #3498db;
+        margin: 15px 0 10px 0;
+    }
+    
+    .finding {
+        margin-bottom: 30px;
+    }
+    
+    .full-width-image {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .potential-factors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .factor-card {
+        background-color: #f5f5f5;
+        border-left: 4px solid #3498db;
+        padding: 15px;
+        border-radius: 0 4px 4px 0;
+    }
+    
+    .implementation-considerations {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .consideration {
+        background-color: #f5f5f5;
+        border-left: 4px solid #2ecc71;
+        padding: 15px;
+        border-radius: 0 4px 4px 0;
+    }
+    
+    .conclusion-box {
+        background-color: #e8f4f8;
+        padding: 20px;
+        border-left: 4px solid #3498db;
+        border-radius: 0 4px 4px 0;
+    }
+    
+    ul {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    
+    li {
+        margin-bottom: 5px;
+    }
+    
+    @media (max-width: 768px) {
+        .potential-factors,
+        .implementation-considerations {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
         <section id="limitations">
             <h2>Limitations and Further Research</h2>
             
