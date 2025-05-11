@@ -473,20 +473,21 @@
 
             <div class="finding">
                 <h3>Priority Areas for Development</h3>
-                <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton. In our site selection methodology, we prioritized municipally-owned vacant parcels to streamline development by avoiding potential condemnation proceedings and associated legal complexities. The analysis identified only two municipal vacant parcels within the study area, with the parcel located in the north-central region emerging as the optimal development site based on multiple criteria:</p>
-                
-                <ul>
-                    <li>Strategic location within a census tract exhibiting high affordable housing need scores</li>
-                    <li>Exceptional transit connectivity with proximity to multiple bus stops, enhancing accessibility for transit-dependent residents</li>
-                    <li>Potential for integration with existing community infrastructure and services</li>
-                </ul>
+                <p>The combined analysis of Need Score and vacant parcel distribution identifies several high-priority areas for affordable housing development, particularly in the eastern and central portions of Clifton. In our site selection methodology, we prioritized municipally-owned vacant parcels to streamline development by avoiding potential condemnation proceedings and associated legal complexities. The analysis identified only two municipal vacant parcels within the study area.</p>
                 
                 <img src="images/Vacant_Parcels_Need_Score.jpg" alt="Target Areas for Affordable Housing Development">
             </div>
 
             <div class="finding">
                 <h3>Where to Build Next? Multi-Criteria Evaluation of Housing Development</h3>
-                <p>By overlaying transit accessibility with vacant parcels and Need Score, the analysis identifies specific opportunities for transit-oriented affordable housing development.</p>
+                <p>By overlaying transit accessibility with municipal vacant parcels and Need Score, the analysis identifies specific opportunities for transit-oriented affordable housing development. The parcel located in the north-central region emerging as the optimal development site, based on multiple criteria:</p>
+    
+                <ul>
+                    <li>Strategic location within a census tract exhibiting high affordable housing need scores</li>
+                    <li>Exceptional transit connectivity with proximity to multiple bus stops, enhancing accessibility for transit-dependent residents</li>
+                    <li>Potential for integration with existing community infrastructure and services</li>
+                </ul>
+                
                 <img src="images/Transit_Oriented.jpg" alt="Identifying Transit-Oriented Affordable Housing Opportunities">
             </div>
         </section>
