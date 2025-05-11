@@ -728,7 +728,7 @@
     
     .consideration {
         background-color: #f5f5f5;
-        border-left: 4px solid #2ecc71;
+        border-left: 4px solid #cc2e80;
         padding: 15px;
         border-radius: 0 4px 4px 0;
     }
