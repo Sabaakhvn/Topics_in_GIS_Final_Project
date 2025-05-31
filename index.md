@@ -831,7 +831,7 @@
                                 <td class="percentage">5.46%</td>
                             </tr>
                             <tr>
-                                <td><strong>Site Preparation</strong></td>
+                                <td><strong>Site Preparation & Remediation</strong></td>
                                 <td>$25</td>
                                 <td>133,990 sq ft</td>
                                 <td class="currency">$3,349,750</td>
@@ -887,11 +887,18 @@
                                 <td class="percentage">9.16%</td>
                             </tr>
                             <tr>
-                                <td>Other Soft Costs</td>
+                                <td>Construction Financing</td>
+                                <td>3% of Total Cost</td>
                                 <td></td>
-                                <td></td>
-                                <td class="currency">$3,336,906</td>
-                                <td class="percentage">9.07%</td>
+                                <td class="currency">$1,912,906</td>
+                                <td class="percentage">5.20%</td>
+                            </tr>
+                            <tr>
+                                <td>Permits & Impact Fees</td>
+                                <td>$2,500 / Unit</td>
+                                <td>120 Units</td>
+                                <td class="currency">$300,000</td>
+                                <td class="percentage">0.82%</td>
                             </tr>
                             <tr class="total-row">
                                 <td><strong>TOTAL DEVELOPMENT COST</strong></td>
