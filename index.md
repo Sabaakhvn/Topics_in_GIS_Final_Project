@@ -914,6 +914,7 @@
                                 <th>Amount</th>
                                 <th>% of Total</th>
                                 <th>Terms</th>
+                                <th>Notes</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -921,37 +922,50 @@
                                 <td><strong>Low-Income Housing Tax Credits (LIHTC)</strong></td>
                                 <td class="currency">$16,560,000</td>
                                 <td class="percentage">45.00%</td>
-                                <td>9% credits, 30-year compliance</td>
+                                <td>9% credits syndicated to equity investors, 30-year compliance</td>
+                                <td>Primary equity source</td>
                             </tr>
                             <tr>
                                 <td>Construction-to-Permanent Loan</td>
                                 <td class="currency">$9,200,000</td>
                                 <td class="percentage">25.00%</td>
                                 <td>6.5% interest, 30-year amort</td>
+                                <td>Bank financing. Subject to NOI and DCR sizing (typically 1.15–1.20)</td>
                             </tr>
                             <tr>
                                 <td>New Jersey Housing Trust Fund</td>
                                 <td class="currency">$3,680,000</td>
                                 <td class="percentage">10.00%</td>
                                 <td>0% interest, 30-year term</td>
-                            </tr>
-                            <tr>
-                                <td>Deferred Developer Fee</td>
-                                <td class="currency">$2,946,506</td>
-                                <td class="percentage">8.01%</td>
-                                <td>Repaid from cash flow</td>
+                                <td>Gap financing</td>
                             </tr>
                             <tr>
                                 <td>HOME Investment Partnerships</td>
                                 <td class="currency">$2,940,000</td>
                                 <td class="percentage">7.99%</td>
-                                <td>0% interest, deferred</td>
+                                <td>0% interest, deferred payment</td>
+                                <td>Federal subsidy</td>
+                            </tr>
+                            <tr>
+                                <td>Deferred Developer Fee (DDF)</td>
+                                <td class="currency">$2,946,506</td>
+                                <td class="percentage">8.01%</td>
+                                <td>Equity contribution</td>
+                                <td>Repaid from project cash flow over time</td>
                             </tr>
                             <tr>
                                 <td>Developer Equity</td>
                                 <td class="currency">$1,470,000</td>
                                 <td class="percentage">3.99%</td>
                                 <td>Equity contribution</td>
+                                <td>Developer investment</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td><strong>TOTAL FUNDING</strong></td>
+                                <td class="currency"><strong>$36,796,506</strong></td>
+                                <td class="percentage"><strong>100.00%</strong></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
