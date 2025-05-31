@@ -965,11 +965,32 @@
                 <!-- Unit Mix Tab -->
                 <div id="unit-mix" class="tab-panel">
                     <h3>Unit Mix & Affordability Structure</h3>
+                    
+                    <div class="metric-grid">
+                        <div class="metric-box">
+                            <h4>Total Units</h4>
+                            <div class="value">120</div>
+                        </div>
+                        <div class="metric-box">
+                            <h4>Total Sq Ft</h4>
+                            <div class="value">111,600</div>
+                        </div>
+                        <div class="metric-box">
+                            <h4>Annual Rent Revenue</h4>
+                            <div class="value">$1.82M</div>
+                        </div>
+                        <div class="metric-box">
+                            <h4>Average Rent</h4>
+                            <div class="value">$1,264</div>
+                        </div>
+                    </div>
+                    
                     <table class="financial-table">
                         <thead>
                             <tr>
                                 <th>Unit Type</th>
                                 <th>Count</th>
+                                <th>Sq Ft</th>
                                 <th>AMI Level</th>
                                 <th>Max Income</th>
                                 <th>Max Rent</th>
@@ -977,9 +998,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="highlight-row">
                                 <td><strong>1BR Units</strong></td>
                                 <td><strong>42</strong></td>
+                                <td>750</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -988,46 +1010,133 @@
                             <tr>
                                 <td style="padding-left: 20px;">30% AMI</td>
                                 <td>14</td>
+                                <td>750</td>
                                 <td>30%</td>
                                 <td>$28,800</td>
                                 <td>$720</td>
                                 <td class="currency">$120,960</td>
                             </tr>
                             <tr>
+                                <td style="padding-left: 20px;">40% AMI</td>
+                                <td>10</td>
+                                <td>750</td>
+                                <td>40%</td>
+                                <td>$38,400</td>
+                                <td>$1,028</td>
+                                <td class="currency">$123,360</td>
+                            </tr>
+                            <tr>
                                 <td style="padding-left: 20px;">50% AMI</td>
-                                <td>20</td>
+                                <td>10</td>
+                                <td>750</td>
                                 <td>50%</td>
                                 <td>$48,000</td>
                                 <td>$1,285</td>
-                                <td class="currency">$308,400</td>
+                                <td class="currency">$154,200</td>
                             </tr>
                             <tr>
                                 <td style="padding-left: 20px;">60% AMI</td>
                                 <td>8</td>
+                                <td>750</td>
                                 <td>60%</td>
                                 <td>$57,600</td>
                                 <td>$1,542</td>
                                 <td class="currency">$148,032</td>
                             </tr>
-                            <tr>
+                            <tr class="highlight-row">
                                 <td><strong>2BR Units</strong></td>
                                 <td><strong>48</strong></td>
+                                <td>950</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td class="currency"><strong>$742,872</strong></td>
                             </tr>
                             <tr>
+                                <td style="padding-left: 20px;">30% AMI</td>
+                                <td>16</td>
+                                <td>950</td>
+                                <td>30%</td>
+                                <td>$32,910</td>
+                                <td>$823</td>
+                                <td class="currency">$158,016</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">40% AMI</td>
+                                <td>12</td>
+                                <td>950</td>
+                                <td>40%</td>
+                                <td>$43,880</td>
+                                <td>$1,234</td>
+                                <td class="currency">$177,696</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">50% AMI</td>
+                                <td>10</td>
+                                <td>950</td>
+                                <td>50%</td>
+                                <td>$54,850</td>
+                                <td>$1,542</td>
+                                <td class="currency">$185,040</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">60% AMI</td>
+                                <td>10</td>
+                                <td>950</td>
+                                <td>60%</td>
+                                <td>$65,820</td>
+                                <td>$1,851</td>
+                                <td class="currency">$222,120</td>
+                            </tr>
+                            <tr class="highlight-row">
                                 <td><strong>3BR Units</strong></td>
                                 <td><strong>30</strong></td>
+                                <td>1,150</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td class="currency"><strong>$530,328</strong></td>
                             </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">30% AMI</td>
+                                <td>10</td>
+                                <td>1,150</td>
+                                <td>30%</td>
+                                <td>$37,020</td>
+                                <td>$926</td>
+                                <td class="currency">$111,120</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">40% AMI</td>
+                                <td>8</td>
+                                <td>1,150</td>
+                                <td>40%</td>
+                                <td>$49,360</td>
+                                <td>$1,426</td>
+                                <td class="currency">$136,896</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">50% AMI</td>
+                                <td>6</td>
+                                <td>1,150</td>
+                                <td>50%</td>
+                                <td>$61,700</td>
+                                <td>$1,782</td>
+                                <td class="currency">$128,304</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">60% AMI</td>
+                                <td>6</td>
+                                <td>1,150</td>
+                                <td>60%</td>
+                                <td>$74,040</td>
+                                <td>$2,139</td>
+                                <td class="currency">$154,008</td>
+                            </tr>
                             <tr class="total-row">
-                                <td><strong>TOTAL</strong></td>
+                                <td><strong>TOTAL PROJECT</strong></td>
                                 <td><strong>120</strong></td>
+                                <td><strong>111,600</strong></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1035,6 +1144,17 @@
                             </tr>
                         </tbody>
                     </table>
+                    
+                    <div class="highlight-box">
+                        <h4>Affordability Distribution</h4>
+                        <ul>
+                            <li><strong>30% AMI Units:</strong> 40 units (33.3%) - Extremely low income households</li>
+                            <li><strong>40% AMI Units:</strong> 30 units (25.0%) - Very low income households</li>
+                            <li><strong>50% AMI Units:</strong> 26 units (21.7%) - Low income households</li>
+                            <li><strong>60% AMI Units:</strong> 24 units (20.0%) - Moderate income households</li>
+                        </ul>
+                        <p><strong>100% of units</strong> serve households earning 60% or less of Area Median Income, ensuring deep affordability and LIHTC compliance.</p>
+                    </div>
                 </div>
 
                 <!-- Operating Model Tab -->
