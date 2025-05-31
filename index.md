@@ -845,21 +845,21 @@
                                 <td class="percentage"></td>
                             </tr>
                             <tr>
-                                <td>1BR Units (42 × 750 sq ft)</td>
+                                <td style="padding-left: 20px;">1BR Units (42 × 750 sq ft)</td>
                                 <td>$210</td>
                                 <td>31,500 sq ft</td>
                                 <td class="currency">$6,615,000</td>
                                 <td class="percentage">17.98%</td>
                             </tr>
                             <tr>
-                                <td>2BR Units (48 × 950 sq ft)</td>
+                                <td style="padding-left: 20px;">2BR Units (48 × 950 sq ft)</td>
                                 <td>$200</td>
                                 <td>45,600 sq ft</td>
                                 <td class="currency">$9,120,000</td>
                                 <td class="percentage">24.78%</td>
                             </tr>
                             <tr>
-                                <td>3BR Units (30 × 1,150 sq ft)</td>
+                                <td style="padding-left: 20px;">3BR Units (30 × 1,150 sq ft)</td>
                                 <td>$190</td>
                                 <td>34,500 sq ft</td>
                                 <td class="currency">$6,555,000</td>
@@ -880,42 +880,42 @@
                                 <td class="percentage"></td>
                             </tr>
                             <tr>
-                                <td>Architecture & Engineering</td>
+                                <td style="padding-left: 20px;">Architecture & Engineering</td>
                                 <td>8% of hard costs</td>
                                 <td></td>
                                 <td class="currency">$1,798,400</td>
                                 <td class="percentage">4.89%</td>
                             </tr>
                             <tr>
-                                <td>Legal & Professional</td>
+                                <td style="padding-left: 20px;">Legal & Professional</td>
                                 <td>2% of hard costs</td>
                                 <td></td>
                                 <td class="currency">$449,600</td>
                                 <td class="percentage">1.22%</td>
                             </tr>
                             <tr>
-                                <td>Developer Fee</td>
+                                <td style="padding-left: 20px;">Developer Fee</td>
                                 <td>15% of hard costs</td>
                                 <td></td>
                                 <td class="currency">$3,372,000</td>
                                 <td class="percentage">9.16%</td>
                             </tr>
                             <tr>
-                                <td>Construction Financing</td>
+                                <td style="padding-left: 20px;">Construction Financing</td>
                                 <td>3% of Total Cost</td>
                                 <td></td>
                                 <td class="currency">$1,912,906</td>
                                 <td class="percentage">5.20%</td>
                             </tr>
                             <tr>
-                                <td>Permits & Impact Fees</td>
+                                <td style="padding-left: 20px;">Permits & Impact Fees</td>
                                 <td>$2,500 / Unit</td>
                                 <td>120 Units</td>
                                 <td class="currency">$300,000</td>
                                 <td class="percentage">0.82%</td>
                             </tr>
                              <tr>
-                                <td>Contingency</td>
+                                <td style="padding-left: 20px;">Contingency</td>
                                 <td>5% of Hard Costs</td>
                                 <td></td>
                                 <td class="currency">$1,124,000</td>
