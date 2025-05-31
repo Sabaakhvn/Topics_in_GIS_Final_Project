@@ -838,6 +838,13 @@
                                 <td class="percentage">9.10%</td>
                             </tr>
                             <tr>
+                                <td><strong>Hard Costs</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td class="currency"></td>
+                                <td class="percentage"></td>
+                            </tr>
+                            <tr>
                                 <td>1BR Units (42 × 750 sq ft)</td>
                                 <td>$210</td>
                                 <td>31,500 sq ft</td>
@@ -864,6 +871,13 @@
                                 <td>111,600 sq ft</td>
                                 <td class="currency">$22,480,000</td>
                                 <td class="percentage">61.09%</td>
+                            </tr>
+                              <tr>
+                                <td><strong>Soft Costs</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td class="currency"></td>
+                                <td class="percentage"></td>
                             </tr>
                             <tr>
                                 <td>Architecture & Engineering</td>
