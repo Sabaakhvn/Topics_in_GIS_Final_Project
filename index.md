@@ -929,8 +929,8 @@
                                 <td>Construction-to-Permanent Loan</td>
                                 <td class="currency">$9,200,000</td>
                                 <td class="percentage">25.00%</td>
-                                <td>6.5% interest, 30-year amort</td>
-                                <td>Bank financing. Subject to NOI and DCR sizing (typically 1.15–1.20)</td>
+                                <td>6.5% interest, 30-year amortization</td>
+                                <td>Bank financing (Subject to NOI and DSCR sizing)</td>
                             </tr>
                             <tr>
                                 <td>New Jersey Housing Trust Fund</td>
