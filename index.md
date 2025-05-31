@@ -900,6 +900,20 @@
                                 <td class="currency">$300,000</td>
                                 <td class="percentage">0.82%</td>
                             </tr>
+                             <tr>
+                                <td>Contingency</td>
+                                <td>5% of Hard Costs</td>
+                                <td></td>
+                                <td class="currency">$1,124,000</td>
+                                <td class="percentage">3.05%</td>
+                            </tr>
+                             <tr class="subtotal-row">
+                                <td><strong>Soft Costs Subtotal</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td class="currency">$8,956,906</td>
+                                <td class="percentage">24.34%</td>
+                            </tr>
                             <tr class="total-row">
                                 <td><strong>TOTAL DEVELOPMENT COST</strong></td>
                                 <td></td>
