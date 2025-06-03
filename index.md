@@ -1941,48 +1941,48 @@
                 <thead>
                     <tr>
                         <th>Year</th>
-                        ${data.slice(0, 10).map(d => `<th>Year ${d.year}</th>`).join('')}
+                        ${data.map(d => `<th>Year ${d.year}</th>`).join('')}
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="highlight-row">
                         <td><strong>Gross Rental Income</strong></td>
-                        ${data.slice(0, 10).map(d => `<td class="currency">${formatCurrency(d.grossRent)}</td>`).join('')}
+                        ${data.map(d => `<td class="currency">${formatCurrency(d.grossRent)}</td>`).join('')}
                     </tr>
                     <tr>
                         <td>Less: Vacancy</td>
-                        ${data.slice(0, 10).map(d => `<td class="negative">(${formatCurrency(d.vacancy)})</td>`).join('')}
+                        ${data.map(d => `<td class="negative">(${formatCurrency(d.vacancy)})</td>`).join('')}
                     </tr>
                     <tr class="subtotal-row">
                         <td><strong>Effective Gross Income</strong></td>
-                        ${data.slice(0, 10).map(d => `<td class="currency"><strong>${formatCurrency(d.effectiveGrossIncome)}</strong></td>`).join('')}
+                        ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.effectiveGrossIncome)}</strong></td>`).join('')}
                     </tr>
                     <tr>
                         <td>Total Operating Expenses</td>
-                        ${data.slice(0, 10).map(d => `<td>${formatCurrency(d.totalOpex)}</td>`).join('')}
+                        ${data.map(d => `<td>${formatCurrency(d.totalOpex)}</td>`).join('')}
                     </tr>
                     <tr class="highlight-row">
                         <td><strong>Net Operating Income</strong></td>
-                        ${data.slice(0, 10).map(d => `<td class="currency"><strong>${formatCurrency(d.noi)}</strong></td>`).join('')}
+                        ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.noi)}</strong></td>`).join('')}
                     </tr>
                     <tr>
                         <td>Debt Service</td>
-                        ${data.slice(0, 10).map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
+                        ${data.map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
                     </tr>
                     <tr class="total-row">
                         <td><strong>Net Cash Flow</strong></td>
-                        ${data.slice(0, 10).map(d => `<td class="${d.cashFlow >= 0 ? 'currency' : 'negative'}"><strong>${formatCurrency(d.cashFlow)}</strong></td>`).join('')}
+                        ${data.map(d => `<td class="${d.cashFlow >= 0 ? 'currency' : 'negative'}"><strong>${formatCurrency(d.cashFlow)}</strong></td>`).join('')}
                     </tr>
                     <tr>
                         <td>Debt Coverage Ratio</td>
-                        ${data.slice(0, 10).map(d => `<td>${d.dscr.toFixed(2)}</td>`).join('')}
+                        ${data.map(d => `<td>${d.dscr.toFixed(2)}</td>`).join('')}
                     </tr>
                 </tbody>
             `;
     
             table.innerHTML = html;
         }
-
+    
         function renderProformaSummary(data) {
             const summaryElement = document.getElementById('proformaSummary');
             if (!summaryElement) return;
