@@ -2036,11 +2036,6 @@
                         ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.noi)}</strong></td>`).join('')}
                     </tr>
                     <tr>
-                        <td>NOI per Sq Ft</td>
-                        ${data.map(d => `<td class="currency">${(d.noi / 111600).toFixed(2)}</td>`).join('')}
-                    </tr>
-                    <tr><td colspan="${data.length + 1}" style="height: 10px; border: none; background: #f5f5f5;"></td></tr>
-                    <tr>
                         <td>Debt Service</td>
                         ${data.map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
                     </tr>
@@ -2057,6 +2052,7 @@
     
             table.innerHTML = html;
         }
+
 
     
         function renderProformaSummary(data) {
