@@ -1842,23 +1842,11 @@
         }
     </style>
 
-    <script>
-        function showTab(tabId) {
-            // Hide all tab panels
-            const panels = document.querySelectorAll('.tab-panel');
-            panels.forEach(panel => panel.classList.remove('active'));
-            
-            // Remove active class from all buttons
-            const buttons = document.querySelectorAll('.tab-button');
-            buttons.forEach(button => button.classList.remove('active'));
-            
-            // Show selected tab panel
-            document.getElementById(tabId).classList.add('active');
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
+    <!-- REPLACE YOUR ENTIRE <script> SECTION WITH THIS: -->
 
-            const baseProformaData = {
+<script>
+        // Base year data from our analysis
+        const baseProformaData = {
             grossRent: 1819752,
             vacancy: 90988,
             effectiveGrossIncome: 1728764,
@@ -1884,10 +1872,16 @@
         }
 
         function generateProformaData() {
-            const rentGrowth = parseFloat(document.getElementById('rentGrowth').value) / 100;
-            const expenseGrowth = parseFloat(document.getElementById('expenseGrowth').value) / 100;
-            const vacancyRate = parseFloat(document.getElementById('vacancyRate').value) / 100;
-            const interestRate = parseFloat(document.getElementById('interestRate').value);
+            const rentGrowthElement = document.getElementById('rentGrowth');
+            const expenseGrowthElement = document.getElementById('expenseGrowth');
+            const vacancyRateElement = document.getElementById('vacancyRate');
+            const interestRateElement = document.getElementById('interestRate');
+
+            // Use default values if elements don't exist yet
+            const rentGrowth = rentGrowthElement ? parseFloat(rentGrowthElement.value) / 100 : 0.02;
+            const expenseGrowth = expenseGrowthElement ? parseFloat(expenseGrowthElement.value) / 100 : 0.03;
+            const vacancyRate = vacancyRateElement ? parseFloat(vacancyRateElement.value) / 100 : 0.05;
+            const interestRate = interestRateElement ? parseFloat(interestRateElement.value) : 6.5;
 
             const debtService = calculateDebtService(baseProformaData.loanAmount, interestRate, baseProformaData.loanTerm);
 
@@ -1941,6 +1935,7 @@
 
         function renderProformaTable(data) {
             const table = document.getElementById('proformaTable');
+            if (!table) return;
     
             let html = `
                 <thead>
@@ -1989,6 +1984,9 @@
         }
 
         function renderProformaSummary(data) {
+            const summaryElement = document.getElementById('proformaSummary');
+            if (!summaryElement) return;
+
             const totalCashFlow = data.reduce((sum, year) => sum + year.cashFlow, 0);
             const averageDSCR = data.reduce((sum, year) => sum + year.dscr, 0) / data.length;
             const year15NOI = data[14].noi;
@@ -2013,22 +2011,30 @@
                 </div>
             `;
 
-            document.getElementById('proformaSummary').innerHTML = html;
+            summaryElement.innerHTML = html;
         }
 
         function updateProforma() {
-            // Update display values
-            document.getElementById('rentGrowthDisplay').textContent = document.getElementById('rentGrowth').value + '%';
-            document.getElementById('expenseGrowthDisplay').textContent = document.getElementById('expenseGrowth').value + '%';
-            document.getElementById('vacancyRateDisplay').textContent = document.getElementById('vacancyRate').value + '%';
-            document.getElementById('interestRateDisplay').textContent = document.getElementById('interestRate').value + '%';
+            // Update display values if elements exist
+            const rentGrowthDisplay = document.getElementById('rentGrowthDisplay');
+            const expenseGrowthDisplay = document.getElementById('expenseGrowthDisplay');
+            const vacancyRateDisplay = document.getElementById('vacancyRateDisplay');
+            const interestRateDisplay = document.getElementById('interestRateDisplay');
+
+            if (rentGrowthDisplay) rentGrowthDisplay.textContent = document.getElementById('rentGrowth').value + '%';
+            if (expenseGrowthDisplay) expenseGrowthDisplay.textContent = document.getElementById('expenseGrowth').value + '%';
+            if (vacancyRateDisplay) vacancyRateDisplay.textContent = document.getElementById('vacancyRate').value + '%';
+            if (interestRateDisplay) interestRateDisplay.textContent = document.getElementById('interestRate').value + '%';
     
             const data = generateProformaData();
             renderProformaTable(data);
             renderProformaSummary(data);
         }
 
+        // Main tab switching function
         function showTab(tabId) {
+            console.log('Switching to tab:', tabId); // Debug log
+            
             // Hide all tab panels
             const panels = document.querySelectorAll('.tab-panel');
             panels.forEach(panel => panel.classList.remove('active'));
@@ -2038,17 +2044,38 @@
             buttons.forEach(button => button.classList.remove('active'));
     
             // Show selected tab panel
-            document.getElementById(tabId).classList.add('active');
+            const selectedPanel = document.getElementById(tabId);
+            if (selectedPanel) {
+                selectedPanel.classList.add('active');
+            }
     
             // Add active class to clicked button
-            event.target.classList.add('active');
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
     
             // Initialize proforma if it's the proforma tab
             if (tabId === 'proforma-15yr') {
-                updateProforma();
+                // Small delay to ensure DOM is ready
+                setTimeout(updateProforma, 100);
             }
         }
-    </script>
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded, initializing tabs');
+            
+            // Make sure first tab is active
+            const firstTab = document.querySelector('.tab-button');
+            const firstPanel = document.querySelector('.tab-panel');
+            
+            if (firstTab && firstPanel) {
+                firstTab.classList.add('active');
+                firstPanel.classList.add('active');
+            }
+        });
+</script>
+    
 
         <section id="limitations">
             <h2>Limitations and Further Research</h2>
