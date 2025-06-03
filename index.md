@@ -1746,67 +1746,105 @@
             margin: 1.5rem 0;
             border: 1px solid #ddd;
             border-radius: 6px;
+            background: white;
         }
 
         .proforma-table-container .financial-table {
-            min-width: 1500px; /* Ensure table is wide enough for 15 years */
+            min-width: 1800px; /* Increased width for all 15 years */
             margin: 0;
+            border-collapse: collapse;
         }
 
-        .proforma-table-container .financial-table th,
-        .proforma-table-container .financial-table td {
-            min-width: 80px; /* Minimum column width */
-            font-size: 0.8rem;
-            padding: 8px 6px;
-            white-space: nowrap;
-        }
-
-        .proforma-table-container .financial-table th:first-child,
-        .proforma-table-container .financial-table td:first-child {
-            min-width: 180px; /* Wider first column for row labels */
+        .proforma-table-container .financial-table th {
+            background: #3498db;
+            color: white;
+            padding: 10px 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            min-width: 100px;
             position: sticky;
-            left: 0;
-            background: white;
-            z-index: 10;
-            border-right: 2px solid #3498db;
+            top: 0;
+            z-index: 5;
         }
 
         .proforma-table-container .financial-table th:first-child {
-            background: #3498db;
-            color: white;
+            min-width: 200px;
+            text-align: left;
+            position: sticky;
+            left: 0;
+            z-index: 10;
+            border-right: 2px solid #2980b9;
         }
 
-        /* Highlight key years */
+        .proforma-table-container .financial-table td {
+            padding: 8px;
+            font-size: 0.8rem;
+            text-align: center;
+            border-bottom: 1px solid #ecf0f1;
+            white-space: nowrap;
+            min-width: 100px;
+        }
+
+        .proforma-table-container .financial-table td:first-child {
+            min-width: 200px;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            left: 0;
+            background: white;
+            z-index: 5;
+            border-right: 2px solid #3498db;
+        }
+
+        /* Highlight milestone years */
         .proforma-table-container .financial-table th:nth-child(6), /* Year 5 */
         .proforma-table-container .financial-table td:nth-child(6) {
-            background-color: #f0f8ff;
+            background-color: #e8f4fd;
             border-left: 2px solid #3498db;
         }
 
         .proforma-table-container .financial-table th:nth-child(11), /* Year 10 */
         .proforma-table-container .financial-table td:nth-child(11) {
-            background-color: #f0f8ff;
+            background-color: #e8f4fd;
             border-left: 2px solid #3498db;
         }
 
         .proforma-table-container .financial-table th:nth-child(16), /* Year 15 */
         .proforma-table-container .financial-table td:nth-child(16) {
-            background-color: #fff0f5;
+            background-color: #fef2f2;
             border-left: 2px solid #e74c3c;
             font-weight: bold;
         }
 
+        /* Make sure highlight rows work properly */
+        .proforma-table-container .financial-table .highlight-row td:first-child {
+            background: #e8f6f3;
+        }
+
+        .proforma-table-container .financial-table .subtotal-row td:first-child {
+            background: #f0f6ff;
+        }
+
+        .proforma-table-container .financial-table .total-row td:first-child {
+            background: #e8f4fd;
+        }
+
         @media (max-width: 768px) {
+            .proforma-table-container .financial-table {
+                min-width: 1200px;
+            }
+            
             .proforma-table-container .financial-table th,
             .proforma-table-container .financial-table td {
-                min-width: 70px;
-                font-size: 0.7rem;
+                min-width: 80px;
                 padding: 6px 4px;
+                font-size: 0.75rem;
             }
             
             .proforma-table-container .financial-table th:first-child,
             .proforma-table-container .financial-table td:first-child {
-                min-width: 140px;
+                min-width: 150px;
             }
         }
     </style>
@@ -1906,11 +1944,17 @@
             const table = document.getElementById('proformaTable');
             if (!table) return;
     
+            // Ensure we have exactly 15 years of data
+            if (data.length !== 15) {
+                console.error('Expected 15 years of data, got:', data.length);
+                return;
+            }
+    
             let html = `
                 <thead>
                     <tr>
-                        <th>Year</th>
-                        ${data.map(d => `<th>Year ${d.year}</th>`).join('')}
+                        <th style="min-width: 200px;">Year</th>
+                        ${data.map(d => `<th style="min-width: 100px;">Year ${d.year}</th>`).join('')}
                     </tr>
                 </thead>
                 <tbody>
@@ -1935,6 +1979,11 @@
                         ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.noi)}</strong></td>`).join('')}
                     </tr>
                     <tr>
+                        <td>NOI per Sq Ft</td>
+                        ${data.map(d => `<td class="currency">$${(d.noi / 111600).toFixed(2)}</td>`).join('')}
+                    </tr>
+                    <tr><td colspan="${data.length + 1}" style="height: 5px; border: none; background: #f0f0f0;"></td></tr>
+                    <tr>
                         <td>Debt Service</td>
                         ${data.map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
                     </tr>
@@ -1944,15 +1993,16 @@
                     </tr>
                     <tr>
                         <td>Debt Coverage Ratio</td>
-                        ${data.map(d => `<td>${d.dscr.toFixed(2)}</td>`).join('')}
+                        ${data.map(d => `<td><strong>${d.dscr.toFixed(2)}</strong></td>`).join('')}
                     </tr>
                 </tbody>
             `;
     
             table.innerHTML = html;
+            
+            // Debug: Log the years to console
+            console.log('Proforma years:', data.map(d => d.year));
         }
-
-
     
         function renderProformaSummary(data) {
             const summaryElement = document.getElementById('proformaSummary');
