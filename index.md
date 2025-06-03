@@ -803,7 +803,6 @@
                 <button class="tab-button active" onclick="showTab('development-costs')">Development Costs</button>
                 <button class="tab-button" onclick="showTab('funding-sources')">Funding Sources</button>
                 <button class="tab-button" onclick="showTab('unit-mix')">Unit Mix</button>
-                <button class="tab-button" onclick="showTab('operating-model')">Operating Model</button>
                 <button class="tab-button" onclick="showTab('proforma-15yr')">15-Year Proforma</button>
                 <button class="tab-button" onclick="showTab('economic-impact')">Economic Impact</button>
                 <button class="tab-button" onclick="showTab('risk-analysis')">Risk Analysis</button>
@@ -1206,106 +1205,6 @@
                         <p><strong>100% of units</strong> serve households earning 60% or less of Area Median Income, ensuring deep affordability and LIHTC compliance.</p>
                     </div>
                 </div>
-
-                <!-- Operating Model Tab -->
-                <div id="operating-model" class="tab-panel">
-                    <h3>Year 1 Operating Financial Model</h3>
-                    <table class="financial-table">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Annual Amount</th>
-                                <th>Per Unit/Month</th>
-                                <th>% of Revenue</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="highlight-row">
-                                <td><strong>TOTAL RENTAL INCOME</strong></td>
-                                <td class="currency">$1,819,752</td>
-                                <td>$1,264</td>
-                                <td class="percentage">100.00%</td>
-                            </tr>
-                            <tr>
-                                <td>Less: Vacancy (5%)</td>
-                                <td class="currency">($90,988)</td>
-                                <td>($63)</td>
-                                <td class="percentage">5.00%</td>
-                            </tr>
-                            <tr class="subtotal-row">
-                                <td><strong>EFFECTIVE GROSS INCOME</strong></td>
-                                <td class="currency">$1,728,764</td>
-                                <td>$1,201</td>
-                                <td class="percentage">95.00%</td>
-                            </tr>
-                            <tr>
-                                <td>Property Management (6%)</td>
-                                <td class="currency">$103,726</td>
-                                <td>$72</td>
-                                <td class="percentage">6.00%</td>
-                            </tr>
-                            <tr>
-                                <td>Maintenance & Repairs</td>
-                                <td class="currency">$172,876</td>
-                                <td>$120</td>
-                                <td class="percentage">10.00%</td>
-                            </tr>
-                            <tr>
-                                <td>Property Taxes</td>
-                                <td class="currency">$155,589</td>
-                                <td>$108</td>
-                                <td class="percentage">9.00%</td>
-                            </tr>
-                            <tr>
-                                <td>Other Operating Expenses</td>
-                                <td class="currency">$202,262</td>
-                                <td>$140</td>
-                                <td class="percentage">11.70%</td>
-                            </tr>
-                            <tr class="subtotal-row">
-                                <td><strong>TOTAL OPERATING EXPENSES</strong></td>
-                                <td class="currency">$634,457</td>
-                                <td>$441</td>
-                                <td class="percentage">36.70%</td>
-                            </tr>
-                            <tr class="highlight-row">
-                                <td><strong>NET OPERATING INCOME</strong></td>
-                                <td class="currency">$1,094,308</td>
-                                <td>$760</td>
-                                <td class="percentage">63.30%</td>
-                            </tr>
-                            <tr>
-                                <td>Debt Service (Construction Loan)</td>
-                                <td class="currency">$697,803</td>
-                                <td>$485</td>
-                                <td class="percentage">40.36%</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td><strong>NET CASH FLOW</strong></td>
-                                <td class="currency">$396,505</td>
-                                <td>$275</td>
-                                <td class="percentage">22.94%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <div class="metric-grid">
-                        <div class="metric-box">
-                            <h4>Debt Coverage Ratio</h4>
-                            <div class="value">1.57</div>
-                        </div>
-                        <div class="metric-box">
-                            <h4>Cap Rate on Cost</h4>
-                            <div class="value">2.97%</div>
-                        </div>
-                        <div class="metric-box">
-                            <h4>NOI per Sq Ft</h4>
-                            <div class="value">$9.81</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add this right before the closing </div> of tab-content -->
 
                 <!-- 15-Year Proforma Tab -->
                 <div id="proforma-15yr" class="tab-panel">
