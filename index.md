@@ -1840,6 +1840,76 @@
                 margin-bottom: 1rem;
             }
         }
+        
+        /* Additional CSS for 15-year table */
+        .proforma-table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .proforma-table-container .financial-table {
+            min-width: 1500px; /* Ensure table is wide enough for 15 years */
+            margin: 0;
+        }
+
+        .proforma-table-container .financial-table th,
+        .proforma-table-container .financial-table td {
+            min-width: 80px; /* Minimum column width */
+            font-size: 0.8rem;
+            padding: 8px 6px;
+            white-space: nowrap;
+        }
+
+        .proforma-table-container .financial-table th:first-child,
+        .proforma-table-container .financial-table td:first-child {
+            min-width: 180px; /* Wider first column for row labels */
+            position: sticky;
+            left: 0;
+            background: white;
+            z-index: 10;
+            border-right: 2px solid #3498db;
+        }
+
+        .proforma-table-container .financial-table th:first-child {
+            background: #3498db;
+            color: white;
+        }
+
+        /* Highlight key years */
+        .proforma-table-container .financial-table th:nth-child(6), /* Year 5 */
+        .proforma-table-container .financial-table td:nth-child(6) {
+            background-color: #f0f8ff;
+            border-left: 2px solid #3498db;
+        }
+
+        .proforma-table-container .financial-table th:nth-child(11), /* Year 10 */
+        .proforma-table-container .financial-table td:nth-child(11) {
+            background-color: #f0f8ff;
+            border-left: 2px solid #3498db;
+        }
+
+        .proforma-table-container .financial-table th:nth-child(16), /* Year 15 */
+        .proforma-table-container .financial-table td:nth-child(16) {
+            background-color: #fff0f5;
+            border-left: 2px solid #e74c3c;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .proforma-table-container .financial-table th,
+            .proforma-table-container .financial-table td {
+                min-width: 70px;
+                font-size: 0.7rem;
+                padding: 6px 4px;
+            }
+            
+            .proforma-table-container .financial-table th:first-child,
+            .proforma-table-container .financial-table td:first-child {
+                min-width: 140px;
+            }
+        }
     </style>
 
     <!-- REPLACE YOUR ENTIRE <script> SECTION WITH THIS: -->
@@ -1966,6 +2036,11 @@
                         ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.noi)}</strong></td>`).join('')}
                     </tr>
                     <tr>
+                        <td>NOI per Sq Ft</td>
+                        ${data.map(d => `<td class="currency">${(d.noi / 111600).toFixed(2)}</td>`).join('')}
+                    </tr>
+                    <tr><td colspan="${data.length + 1}" style="height: 10px; border: none; background: #f5f5f5;"></td></tr>
+                    <tr>
                         <td>Debt Service</td>
                         ${data.map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
                     </tr>
@@ -1982,6 +2057,7 @@
     
             table.innerHTML = html;
         }
+
     
         function renderProformaSummary(data) {
             const summaryElement = document.getElementById('proformaSummary');
