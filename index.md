@@ -682,7 +682,7 @@
     }
     
     #vacant-site-analysis h4 {
-        color: #3498db;
+        color: #cc2e80; 
         margin: 15px 0 10px 0;
     }
     
