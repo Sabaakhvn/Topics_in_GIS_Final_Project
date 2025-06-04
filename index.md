@@ -758,6 +758,162 @@
     }
 </style>
 
+<section id="zoning-analysis">
+    <h2>Zoning Analysis: M-2 General Industrial District</h2>
+    
+    <div class="finding">
+        <h3>Current Zoning Classification</h3>
+        
+        <div class="zoning-map-container">
+            <img src="images/clifton-zoning-map.jpg" alt="Clifton Zoning Map showing M-2 General Industrial District" class="zoning-map">
+            <div class="map-caption">
+                <strong>Clifton Zoning Map:</strong> The Clifton Railroad Corporation site (highlighted in red circles) is located within the M-2 General Industrial zoning district.
+            </div>
+        </div>
+        
+        <p>The Clifton Railroad Corporation site is currently zoned as M-2 (General Industrial), which presents both opportunities and challenges for affordable housing development. The M-2 zoning district is typically designed to accommodate a wide range of industrial activities, including manufacturing, warehousing, distribution facilities, and related commercial uses. However, this industrial zoning classification does not permit residential development by right, necessitating a zoning variance, special use permit, or rezoning application to enable the proposed affordable housing project.</p>
+        
+        <p>The transition from M-2 industrial zoning to residential use aligns with broader urban planning trends toward mixed-use development and the adaptive reuse of underutilized industrial sites. Given the site's strategic location adjacent to established residential neighborhoods and its proximity to transit infrastructure, a rezoning application to a residential or mixed-use classification would be appropriate and likely supported by municipal planning objectives. The city's comprehensive plan and affordable housing goals would provide strong justification for rezoning this 3.076-acre site to accommodate the proposed 120-unit affordable housing development.</p>
+        
+        <div class="zoning-considerations">
+            <h4>Zoning Change Considerations</h4>
+            <div class="consideration-grid">
+                <div class="zoning-consideration">
+                    <h5>Required Process</h5>
+                    <ul>
+                        <li>Zoning variance or rezoning application</li>
+                        <li>Planning Board review and approval</li>
+                        <li>Public hearing and community input</li>
+                        <li>City Council final approval</li>
+                    </ul>
+                </div>
+                
+                <div class="zoning-consideration">
+                    <h5>Supporting Factors</h5>
+                    <ul>
+                        <li>Underutilized industrial site</li>
+                        <li>Adjacent residential neighborhoods</li>
+                        <li>Municipal affordable housing obligations</li>
+                        <li>Transit-oriented development potential</li>
+                    </ul>
+                </div>
+                
+                <div class="zoning-consideration">
+                    <h5>Potential Challenges</h5>
+                    <ul>
+                        <li>Industrial legacy and remediation needs</li>
+                        <li>Infrastructure capacity requirements</li>
+                        <li>Community concerns about density</li>
+                        <li>Parking and traffic impact considerations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+/* Zoning Analysis Styles */
+#zoning-analysis {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#zoning-analysis h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 10px;
+}
+
+.zoning-map-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.zoning-map {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.map-caption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.zoning-considerations {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.zoning-considerations h4 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.consideration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.zoning-consideration {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #e67e22;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.zoning-consideration h5 {
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.zoning-consideration ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.zoning-consideration li {
+    padding: 5px 0 5px 20px;
+    position: relative;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.zoning-consideration li:before {
+    content: "•";
+    color: #e67e22;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .consideration-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .zoning-map {
+        max-width: 100%;
+    }
+}
+
 <section id="financial-analysis">
         <h2>Financial Feasibility Analysis</h2>
         
