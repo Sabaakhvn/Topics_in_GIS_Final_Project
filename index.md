@@ -901,40 +901,18 @@
     }
  </style>
 
-<div class="finding">
-        <h3>Conclusion</h3>
-        <div class="conclusion-box">
-            <p>The Clifton Railroad Corporation site illustrates the evolution of industrial properties in northern New Jersey over recent decades. From active industrial operations in 1995 to the current underutilized state in 2024, the changes visible in satellite imagery reflect broader economic transitions affecting similar properties throughout the region.</p>
-            <p>The site now presents a significant opportunity for affordable housing development that could leverage existing infrastructure and transit accessibility while addressing community needs. At 3.076 acres, it offers an ideal scale for an efficient affordable housing project - large enough to make a meaningful impact on housing availability but small enough to be financially feasible for municipal or non-profit developers.</p>
-            <p>While the current M-2 zoning presents regulatory challenges requiring rezoning or variance approval, the site's strategic location, transit accessibility, and underutilized status provide compelling justification for residential development. Through thoughtful planning that respects both the site's industrial heritage and its urban context, this compact property could transform from an underutilized industrial remnant to a vibrant residential community serving Clifton's future housing needs.</p>
-        </div>
+<section id="site-conclusion">
+    <h2>Site Development Potential: Summary and Conclusion</h2>
+    
+    <div class="conclusion-box">
+        <p>The Clifton Railroad Corporation site illustrates the evolution of industrial properties in northern New Jersey over recent decades. From active industrial operations in 1995 to the current underutilized state in 2024, the changes visible in satellite imagery reflect broader economic transitions affecting similar properties throughout the region.</p>
+        
+        <p>The site now presents a significant opportunity for affordable housing development that could leverage existing infrastructure and transit accessibility while addressing community needs. At 3.076 acres, it offers an ideal scale for an efficient affordable housing project - large enough to make a meaningful impact on housing availability but small enough to be financially feasible for municipal or non-profit developers.</p>
+        
+        <p>While the current M-2 zoning presents regulatory challenges requiring rezoning or variance approval, the site's strategic location, transit accessibility, and underutilized status provide compelling justification for residential development. Through thoughtful planning that respects both the site's industrial heritage and its urban context, this compact property could transform from an underutilized industrial remnant to a vibrant residential community serving Clifton's future housing needs.</p>
     </div>
 </section>
 
-<style>
-    /* Site Conclusion Styles */
-    #site-conclusion {
-        margin: 40px 0;
-        padding: 20px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    #site-conclusion h2 {
-        color: #2c3e50;
-        margin-bottom: 30px;
-        border-bottom: 2px solid #f5f5f5;
-        padding-bottom: 10px;
-    }
-
-    .conclusion-box {
-        background-color: #e8f4f8;
-        padding: 20px;
-        border-left: 4px solid #3498db;
-        border-radius: 0 4px 4px 0;
-    }
-</style>
 
 
 
