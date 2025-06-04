@@ -1561,8 +1561,6 @@
             table-layout: fixed;
             border-collapse: collapse;
             margin-top: 1rem;
-            min-width: 100%;
-            overflow: visible;
         }
 
         .financial-table th {
@@ -1751,7 +1749,11 @@
             
             .financial-table th,
             .financial-table td {
-                padding: 8px 10px;
+                width: 20%; /* Force equal column widths since you have 5 columns */
+                padding: 10px 15px;
+                border-bottom: 1px solid #ecf0f1;
+                font-size: 0.9rem;
+                word-wrap: break-word;
             }
 
             .assumptions-grid {
