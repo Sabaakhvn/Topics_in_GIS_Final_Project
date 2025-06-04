@@ -1776,7 +1776,6 @@
             const vacancyRateElement = document.getElementById('vacancyRate');
             const interestRateElement = document.getElementById('interestRate');
 
-            // Use default values if elements don't exist yet
             const rentGrowth = rentGrowthElement ? parseFloat(rentGrowthElement.value) / 100 : 0.02;
             const expenseGrowth = expenseGrowthElement ? parseFloat(expenseGrowthElement.value) / 100 : 0.03;
             const vacancyRate = vacancyRateElement ? parseFloat(vacancyRateElement.value) / 100 : 0.05;
@@ -1784,34 +1783,54 @@
 
             const debtService = calculateDebtService(baseProformaData.loanAmount, interestRate, baseProformaData.loanTerm);
 
+            // Base year individual expense items
+            const baseExpenses = {
+                propertyManagement: 103726,
+                maintenance: 172876,
+                utilities: 60507,
+                insurance: 44948,
+                propertyTaxes: 155589,
+                administrative: 36304,
+                reserves: 60507
+            };
+
             let proformaData = [];
     
             for (let year = 1; year <= 15; year++) {
-                const growthFactor = Math.pow(1 + rentGrowth, year - 1);
+                const rentGrowthFactor = Math.pow(1 + rentGrowth, year - 1);
                 const expenseGrowthFactor = Math.pow(1 + expenseGrowth, year - 1);
 
-                const grossRent = baseProformaData.grossRent * growthFactor;
+                // Revenue calculations
+                const grossRent = baseProformaData.grossRent * rentGrowthFactor;
                 const vacancy = grossRent * vacancyRate;
                 const effectiveGrossIncome = grossRent - vacancy;
 
-                const propertyManagement = baseProformaData.propertyManagement * expenseGrowthFactor;
-                const maintenance = baseProformaData.maintenance * expenseGrowthFactor;
-                const utilities = baseProformaData.utilities * expenseGrowthFactor;
-                const insurance = baseProformaData.insurance * expenseGrowthFactor;
-                const propertyTaxes = baseProformaData.propertyTaxes * expenseGrowthFactor;
-                const administrative = baseProformaData.administrative * expenseGrowthFactor;
-                const reserves = baseProformaData.reserves * expenseGrowthFactor;
+                // Individual operating expense calculations
+                const propertyManagement = baseExpenses.propertyManagement * expenseGrowthFactor;
+                const maintenance = baseExpenses.maintenance * expenseGrowthFactor;
+                const utilities = baseExpenses.utilities * expenseGrowthFactor;
+                const insurance = baseExpenses.insurance * expenseGrowthFactor;
+                const propertyTaxes = baseExpenses.propertyTaxes * expenseGrowthFactor;
+                const administrative = baseExpenses.administrative * expenseGrowthFactor;
+                const reserves = baseExpenses.reserves * expenseGrowthFactor;
 
                 const totalOpex = propertyManagement + maintenance + utilities + insurance + propertyTaxes + administrative + reserves;
                 const noi = effectiveGrossIncome - totalOpex;
-                const cashFlow = noi - debtService;
                 const dscr = noi / debtService;
+                const cashFlow = noi - debtService;
 
                 proformaData.push({
                     year,
                     grossRent,
                     vacancy,
                     effectiveGrossIncome,
+                    propertyManagement,
+                    maintenance,
+                    utilities,
+                    insurance,
+                    propertyTaxes,
+                    administrative,
+                    reserves,
                     totalOpex,
                     noi,
                     debtService,
@@ -1841,6 +1860,9 @@
                 console.error('Expected 15 years of data, got:', data.length);
                 return;
             }
+
+            // Calculate Cap Rate on Cost for each year
+            const totalDevCost = 36796506; // Total development cost
     
             let html = `
                 <thead>
@@ -1855,45 +1877,85 @@
                         ${data.map(d => `<td class="currency">${formatCurrency(d.grossRent)}</td>`).join('')}
                     </tr>
                     <tr>
-                        <td>Less: Vacancy</td>
+                        <td>Less: Vacancy (5%)</td>
                         ${data.map(d => `<td class="negative">(${formatCurrency(d.vacancy)})</td>`).join('')}
                     </tr>
                     <tr class="subtotal-row">
-                        <td><strong>Effective Gross Income</strong></td>
+                        <td><strong>Effective Gross Income (EGI)</strong></td>
                         ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.effectiveGrossIncome)}</strong></td>`).join('')}
                     </tr>
-                    <tr>
-                        <td>Total Operating Expenses</td>
-                        ${data.map(d => `<td>${formatCurrency(d.totalOpex)}</td>`).join('')}
+                    <tr><td colspan="${data.length + 1}" style="height: 5px; border: none; background: #f0f0f0;"></td></tr>
+                    <tr class="category-header">
+                        <td><strong>OPERATING EXPENSES</strong></td>
+                        ${data.map(d => `<td></td>`).join('')}
                     </tr>
+                    <tr>
+                        <td>Property Management (6%)</td>
+                        ${data.map(d => `<td>${formatCurrency(d.propertyManagement)}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Maintenance & Repairs</td>
+                        ${data.map(d => `<td>${formatCurrency(d.maintenance)}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Utilities (Common Areas)</td>
+                        ${data.map(d => `<td>${formatCurrency(d.utilities)}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Insurance</td>
+                        ${data.map(d => `<td>${formatCurrency(d.insurance)}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Property Taxes</td>
+                        ${data.map(d => `<td>${formatCurrency(d.propertyTaxes)}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Administrative</td>
+                        ${data.map(d => `<td>${formatCurrency(d.administrative)}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Reserves</td>
+                        ${data.map(d => `<td>${formatCurrency(d.reserves)}</td>`).join('')}
+                    </tr>
+                    <tr class="subtotal-row">
+                        <td><strong>TOTAL OPERATING EXPENSES</strong></td>
+                        ${data.map(d => `<td><strong>${formatCurrency(d.totalOpex)}</strong></td>`).join('')}
+                    </tr>
+                    <tr><td colspan="${data.length + 1}" style="height: 5px; border: none; background: #f0f0f0;"></td></tr>
                     <tr class="highlight-row">
-                        <td><strong>Net Operating Income</strong></td>
+                        <td><strong>NET OPERATING INCOME (NOI)</strong></td>
                         ${data.map(d => `<td class="currency"><strong>${formatCurrency(d.noi)}</strong></td>`).join('')}
+                    </tr>
+                    <tr><td colspan="${data.length + 1}" style="height: 5px; border: none; background: #f0f0f0;"></td></tr>
+                    <tr class="category-header">
+                        <td><strong>DEBT SERVICE</strong></td>
+                        ${data.map(d => `<td></td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Construction-to-Perm Loan</td>
+                        ${data.map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
+                    </tr>
+                    <tr class="total-row">
+                        <td><strong>NET CASH FLOW</strong></td>
+                        ${data.map(d => `<td class="${d.cashFlow >= 0 ? 'currency' : 'negative'}"><strong>${formatCurrency(d.cashFlow)}</strong></td>`).join('')}
+                    </tr>
+                    <tr><td colspan="${data.length + 1}" style="height: 5px; border: none; background: #f0f0f0;"></td></tr>
+                    <tr>
+                        <td><strong>Debt Service Coverage Ratio (DSCR)</strong></td>
+                        ${data.map(d => `<td><strong>${d.dscr.toFixed(2)}</strong></td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td>Cap Rate on Cost</td>
+                        ${data.map(d => `<td class="percentage">${((d.noi / totalDevCost) * 100).toFixed(2)}%</td>`).join('')}
                     </tr>
                     <tr>
                         <td>NOI per Sq Ft</td>
                         ${data.map(d => `<td class="currency">$${(d.noi / 111600).toFixed(2)}</td>`).join('')}
                     </tr>
-                    <tr><td colspan="${data.length + 1}" style="height: 5px; border: none; background: #f0f0f0;"></td></tr>
-                    <tr>
-                        <td>Debt Service</td>
-                        ${data.map(d => `<td>${formatCurrency(d.debtService)}</td>`).join('')}
-                    </tr>
-                    <tr class="total-row">
-                        <td><strong>Net Cash Flow</strong></td>
-                        ${data.map(d => `<td class="${d.cashFlow >= 0 ? 'currency' : 'negative'}"><strong>${formatCurrency(d.cashFlow)}</strong></td>`).join('')}
-                    </tr>
-                    <tr>
-                        <td>Debt Coverage Ratio</td>
-                        ${data.map(d => `<td><strong>${d.dscr.toFixed(2)}</strong></td>`).join('')}
-                    </tr>
                 </tbody>
             `;
     
             table.innerHTML = html;
-            
-            // Debug: Log the years to console
-            console.log('Proforma years:', data.map(d => d.year));
         }
     
         function renderProformaSummary(data) {
