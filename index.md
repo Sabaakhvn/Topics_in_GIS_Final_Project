@@ -1539,6 +1539,7 @@
             display: none;
             padding: 2rem;
             animation: fadeIn 0.3s ease-in;
+            box-sizing: border-box; 
         }
 
         .tab-panel.active {
