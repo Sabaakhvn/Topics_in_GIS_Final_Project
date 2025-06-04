@@ -794,6 +794,20 @@
                     <span class="metric-value">$1.86M</span>
                     <span class="metric-detail">Annual local impact • 195 permanent jobs</span>
                 </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">🏠</div>
+                    <h4>Total Units Served</h4>
+                    <span class="metric-value">120</span>
+                    <span class="metric-detail">Mixed-income LIHTC • 30-60% AMI</span>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <h4>Break-Even Occupancy</h4>
+                    <span class="metric-value">73.2%</span>
+                    <span class="metric-detail">21.8% safety margin • 95% target occupancy</span>
+                </div>
             </div>
         </div>
 
