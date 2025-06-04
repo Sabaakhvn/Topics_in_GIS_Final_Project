@@ -1890,7 +1890,7 @@
                         ${data.map(d => `<td></td>`).join('')}
                     </tr>
                     <tr>
-                        <td>Property Management (6%)</td>
+                        <td>Property Management</td>
                         ${data.map(d => `<td>${formatCurrency(d.propertyManagement)}</td>`).join('')}
                     </tr>
                     <tr>
