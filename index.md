@@ -767,7 +767,7 @@
         <div class="zoning-map-container">
             <img src="images/Zoning Map.jpg" alt="Clifton Zoning Map showing M-2 General Industrial District" class="zoning-map">
             <div class="map-caption">
-                <strong>Clifton Zoning Map:</strong> The Clifton Railroad Corporation site (highlighted in red circles) is located within the M-2 General Industrial zoning district.
+                <strong>Clifton Zoning Map:</strong> The Clifton Railroad Corporation site (highlighted in red) is located within the M-2 General Industrial zoning district.
             </div>
         </div>
         
@@ -812,107 +812,109 @@
     </div>
 </section>
 
-/* Zoning Analysis Styles */
-#zoning-analysis {
-    margin: 40px 0;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-#zoning-analysis h2 {
-    color: #2c3e50;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #f5f5f5;
-    padding-bottom: 10px;
-}
-
-.zoning-map-container {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.zoning-map {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin: 0 auto 15px auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.map-caption {
-    font-size: 0.9rem;
-    color: #666;
-    font-style: italic;
-    margin-top: 10px;
-}
-
-.zoning-considerations {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 6px;
-    margin-top: 30px;
-}
-
-.zoning-considerations h4 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.consideration-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.zoning-consideration {
-    background: white;
-    padding: 20px;
-    border-radius: 6px;
-    border-left: 4px solid #e67e22;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.zoning-consideration h5 {
-    color: #e67e22;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.zoning-consideration ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.zoning-consideration li {
-    padding: 5px 0 5px 20px;
-    position: relative;
-    color: #555;
-    font-size: 0.9rem;
-}
-
-.zoning-consideration li:before {
-    content: "•";
-    color: #e67e22;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
-@media (max-width: 768px) {
-    .consideration-grid {
-        grid-template-columns: 1fr;
+<style>
+    /* Zoning Analysis Styles */
+    #zoning-analysis {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    
+
+    #zoning-analysis h2 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #f5f5f5;
+        padding-bottom: 10px;
+    }
+
+    .zoning-map-container {
+        text-align: center;
+        margin: 30px 0;
+    }
+
     .zoning-map {
-        max-width: 100%;
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        margin: 0 auto 15px auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-}
+
+    .map-caption {
+        font-size: 0.9rem;
+        color: #666;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .zoning-considerations {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 6px;
+        margin-top: 30px;
+    }
+
+    .zoning-considerations h4 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .consideration-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .zoning-consideration {
+        background: white;
+        padding: 20px;
+        border-radius: 6px;
+        border-left: 4px solid #e67e22;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .zoning-consideration h5 {
+        color: #e67e22;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .zoning-consideration ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .zoning-consideration li {
+        padding: 5px 0 5px 20px;
+        position: relative;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .zoning-consideration li:before {
+        content: "•";
+        color: #e67e22;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+
+    @media (max-width: 768px) {
+        .consideration-grid {
+            grid-template-columns: 1fr;
+        }
+    
+        .zoning-map {
+            max-width: 100%;
+        }
+    }
+ </style>
 
 <section id="financial-analysis">
         <h2>Financial Feasibility Analysis</h2>
