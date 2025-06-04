@@ -726,13 +726,6 @@
         border-radius: 0 4px 4px 0;
     }
     
-    .conclusion-box {
-        background-color: #e8f4f8;
-        padding: 20px;
-        border-left: 4px solid #3498db;
-        border-radius: 0 4px 4px 0;
-    }
-    
     ul {
         padding-left: 20px;
         margin-bottom: 15px;
@@ -761,6 +754,32 @@
     </div>
 </section>
 
+<style>
+    /* Site Conclusion Styles */
+    #site-conclusion {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    #site-conclusion h2 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #f5f5f5;
+        padding-bottom: 10px;
+    }
+
+    .conclusion-box {
+        background-color: #e8f4f8;
+        padding: 20px;
+        border-left: 4px solid #3498db;
+        border-radius: 0 4px 4px 0;
+    }
+</style>
+
+    
 <section id="zoning-analysis">
     <h2>Zoning Analysis: M-2 General Industrial District</h2>
     
