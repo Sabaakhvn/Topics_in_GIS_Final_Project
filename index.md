@@ -1488,6 +1488,8 @@
         }
 
         .financial-tabs {
+            width: 100%; 
+            max-width: none; 
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -1532,6 +1534,7 @@
         }
 
         .tab-content {
+            width: 100%;
             padding: 0;
         }
 
@@ -1556,6 +1559,8 @@
             table-layout: fixed;
             border-collapse: collapse;
             margin-top: 1rem;
+            min-width: 100%;
+            overflow: visible;
         }
 
         .financial-table th {
@@ -1688,6 +1693,7 @@
         }
 
         .proforma-table-container {
+            width: 100%;
             overflow-x: auto;
             margin: 1.5rem 0;
         }
