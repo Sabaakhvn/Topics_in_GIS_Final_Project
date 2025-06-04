@@ -1423,6 +1423,8 @@
         /* Financial Analysis Styles */
         #financial-analysis {
             margin: 40px 0;
+            width: 100%; 
+            max-width: none; 
         }
 
         .metrics-dashboard {
