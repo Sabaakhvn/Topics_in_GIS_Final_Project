@@ -765,7 +765,7 @@
         <h3>Current Zoning Classification</h3>
         
         <div class="zoning-map-container">
-            <img src="images/clifton-zoning-map.jpg" alt="Clifton Zoning Map showing M-2 General Industrial District" class="zoning-map">
+            <img src="images/Zoning Map.jpg" alt="Clifton Zoning Map showing M-2 General Industrial District" class="zoning-map">
             <div class="map-caption">
                 <strong>Clifton Zoning Map:</strong> The Clifton Railroad Corporation site (highlighted in red circles) is located within the M-2 General Industrial zoning district.
             </div>
