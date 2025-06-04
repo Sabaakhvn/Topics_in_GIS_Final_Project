@@ -853,10 +853,10 @@
                             </tr>
                             <tr>
                                 <td><strong>Hard Costs</strong></td>
-                                <td></td>
-                                <td></td>
-                                <td class="currency"></td>
-                                <td class="percentage"></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td class="currency">&nbsp;</td>
+                                <td class="percentage">&nbsp;</td>
                             </tr>
                             <tr>
                                 <td style="padding-left: 20px;">1BR Units (42 × 750 sq ft)</td>
