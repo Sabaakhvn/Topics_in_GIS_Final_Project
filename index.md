@@ -657,7 +657,7 @@
             </div>
         </div>
     </div>
-    
+</section>    
 
 <style>
     /* Styles for the vacant site analysis section */
@@ -742,7 +742,7 @@
         }
     }
 </style>
-   
+ 
 <section id="zoning-analysis">
     <h2>Zoning Analysis: M-2 General Industrial District</h2>
     
