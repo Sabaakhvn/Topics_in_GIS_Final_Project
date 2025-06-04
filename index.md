@@ -1557,8 +1557,8 @@
         }
 
         .financial-table {
-            width: 100%;
-            table-layout: fixed;
+            width: 100% !important;
+            table-layout: fixed !important;
             border-collapse: collapse;
             margin-top: 1rem;
         }
@@ -1749,7 +1749,8 @@
             
             .financial-table th,
             .financial-table td {
-                width: 20%; /* Force equal column widths since you have 5 columns */
+                width: 20% !important; 
+                min-width: 20% !important;
                 padding: 10px 15px;
                 border-bottom: 1px solid #ecf0f1;
                 font-size: 0.9rem;
