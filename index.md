@@ -614,10 +614,10 @@
     </div>
     
     <div class="finding">
-        <h3 class="implementation-heading">Implementation Considerations</h3>
+        <h3">Implementation Considerations</h3>
         <p>While the site offers significant potential, several important factors would need addressing in any redevelopment planning:</p>
         
-        <div class="implementation-considerations">
+        <div class="implementation-heading">
             <div class="consideration">
                 <h4>1. Environmental Assessment</h4>
                 <ul>
