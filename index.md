@@ -881,7 +881,6 @@
     .zoning-consideration li {
         padding: 5px 0 5px 20px;
         position: relative;
-        color: #555;
         font-size: 0.9rem;
     }
 
