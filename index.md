@@ -617,7 +617,7 @@
         <h3">Implementation Considerations</h3>
         <p>While the site offers significant potential, several important factors would need addressing in any redevelopment planning:</p>
         
-        <div class="implementation-heading">
+        <div class="implementation-consideration">
             <div class="consideration">
                 <h4>1. Environmental Assessment</h4>
                 <ul>
@@ -686,10 +686,6 @@
         margin: 15px 0 10px 0;
     }
     
-    .implementation-heading {
-    color: #cc2e80 !important;
-    }
-    
     .finding {
         margin-bottom: 30px;
     }
@@ -724,6 +720,7 @@
     }
     
     .consideration {
+        color: #cc2e80 !important;
         background-color: #f5f5f5;
         border-left: 4px solid #cc2e80;
         padding: 15px;
