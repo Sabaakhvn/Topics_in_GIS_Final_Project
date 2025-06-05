@@ -720,13 +720,15 @@
     }
     
     .consideration {
-        color: #cc2e80 !important;
         background-color: #f5f5f5;
         border-left: 4px solid #cc2e80;
         padding: 15px;
         border-radius: 0 4px 4px 0;
     }
     
+    .consideration h4 {
+    color: #cc2e80 !important;
+    }
     ul {
         padding-left: 20px;
         margin-bottom: 15px;
