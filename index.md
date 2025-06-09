@@ -2246,7 +2246,6 @@
             
             <ul>
                 <li><strong>Data Currency</strong>: Some demographic data may not capture recent changes in population or housing patterns.</li>
-                <li><strong>Zoning Constraints</strong>: This analysis does not incorporate current zoning regulations that may limit development potential.</li>
                 <li><strong>Environmental Factors</strong>: Potential environmental constraints on vacant parcels are not considered.</li>
                 <li><strong>Market Dynamics</strong>: Current market conditions and developer interest are not fully captured.</li>
             </ul>
@@ -2254,7 +2253,6 @@
             <p>Additional data sources that would enhance the analysis include:</p>
             
             <ul>
-                <li>Detailed zoning and land use regulations</li>
                 <li>Utility infrastructure capacity</li>
                 <li>Brownfield or contamination site data</li>
                 <li>Housing permits and pipeline projects</li>
