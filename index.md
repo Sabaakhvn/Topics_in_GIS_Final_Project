@@ -952,7 +952,7 @@
                     <div class="metric-icon">🌟</div>
                     <h4>Economic Impact</h4>
                     <span class="metric-value">$1.86M</span>
-                    <span class="metric-detail">Annual local impact • 195 permanent jobs</span>
+                    <span class="metric-detail">Annual local impact • 111 construction jobs (18 months) & 6 permanent operational jobs</span>
                 </div>
 
                 <div class="metric-card">
